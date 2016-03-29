@@ -15,6 +15,7 @@
 	<key>patterns</key>
 	<array>
 		<dict>
+			<!-- Replacing this include with source.c does not produce the issue -->
 			<key>include</key>
 			<string>#inline-c</string>
 		</dict>
