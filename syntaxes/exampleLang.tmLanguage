@@ -27,6 +27,11 @@
 		<dict>    
             <key>begin</key>
 			<string>start</string>
+			<!--
+				The following strings do not produce this issue
+				<string>;</string>
+				<string>^</string>
+			-->
 			<key>beginCaptures</key>
 			<dict>
 				<key>0</key>
