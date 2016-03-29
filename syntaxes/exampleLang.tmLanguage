@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>exampleFile</string>
+	</array>
+	<key>name</key>
+	<string>Example</string>
+	
+	<key>scopeName</key>
+	<string>source.example</string>
+	
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>include</key>
+			<string>#inline-c</string>
+		</dict>
+	</array>
+	
+	<key>repository</key>
+	<dict>
+		<key>inline-c</key>
+		<dict>    
+            <key>begin</key>
+			<string>start</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+				    <key>name</key>
+				    <string>keyword.source.example</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>stop</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.source.example</string>
+				</dict>
+			</dict>
+           
+		    <key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.c</string>
+				</dict>
+			</array>
+        </dict>
+	</dict>
+</dict>
+</plist>

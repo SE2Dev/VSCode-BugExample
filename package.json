@@ -1,0 +1,26 @@
+{
+	"name": "vscode-csyntaxhighlighting-bug",
+	"displayName": "VSCode-CSyntaxHighlighting-Bug",
+	"description": "A VSCode colorizer that demonstrates a potential bug in the C syntax highlighting",
+	"version": "0.0.1",
+	"publisher": "SE2Dev",
+	"engines": {
+		"vscode": "^0.10.6"
+	},
+	"categories": [
+		"Languages"
+	],
+	"contributes": {
+		"languages": [{
+			"id": "example",
+			"aliases": ["Example", "example"],
+			"extensions": [".exampleFile"],
+			"configuration": "./example.configuration.json"
+		}],
+		"grammars": [{
+			"language": "example",
+			"scopeName": "source.example",
+			"path": "./syntaxes/exampleLang.tmLanguage"
+		}]
+	}
+}

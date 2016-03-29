@@ -1,0 +1,47 @@
+start
+    #include "files"
+    // line comment
+    /* block comment */
+    void foo(bar);
+    
+    int someint = 423;
+    char* somestring = "sdg";
+    
+    // Code within braces appears to be highlighted incorrectly (or not at all)
+    {
+        int someint = 423;
+        char* somestring = "sdg";
+    }
+    
+    int somefunc() 
+    {
+        // most code inside functions does not appear to be highlighted correctly
+        int a = 4;
+        char* str = "some string";
+        printf("some string");
+        
+        //exceptions
+        myclass obj(args);
+        void func();
+        int void int  (1+2); //invalid stuff
+        return 24;
+    }
+stop
+
+start
+    int somefunc() 
+    {
+        start //Adding a second block within the function body appears to enable syntax highlighting   
+        int a = 4;
+        char* str = "some string";
+        printf("some string");
+        
+        //exceptions (which are now highlighted)
+        myclass obj(args);
+        void func();
+        int void int  (1+2); //invalid stuff
+        
+        return 24;
+        stop
+    }   
+stop
